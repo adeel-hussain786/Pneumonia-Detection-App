@@ -1,79 +1,210 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 🫁 Pneumonia Detection App
 
-# Getting Started
+An AI-powered mobile application that detects **Pneumonia** from **Chest X-ray images** using a **Convolutional Neural Network (CNN)**. The application is built with **React Native** for the frontend and integrates a trained deep learning model to provide fast and accurate predictions.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+---
 
-## Step 1: Start the Metro Server
+## 📌 Overview
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Pneumonia is a serious lung infection that can be life-threatening if not diagnosed early. This project leverages Artificial Intelligence to assist in the early detection of pneumonia by analyzing chest X-ray images.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Users can upload or capture an X-ray image through the mobile application, and the trained CNN model predicts whether the patient is likely to have pneumonia.
+
+---
+
+## ✨ Features
+
+* 🩺 Detects Pneumonia from Chest X-ray images
+* 📷 Upload image from gallery or capture using camera
+* 🤖 CNN-based deep learning model
+* 📱 Cross-platform mobile application using React Native
+* 🔐 Firebase Authentication
+* ☁️ Cloud-based prediction API
+* 📊 Fast and accurate prediction results
+* 🎨 Simple and user-friendly interface
+
+---
+
+## 🛠️ Tech Stack
+
+### Mobile Application
+
+* React Native
+* JavaScript
+* React Navigation
+
+### Artificial Intelligence
+
+* Python
+* TensorFlow / Keras
+* Convolutional Neural Network (CNN)
+
+### Backend
+
+* Flask API
+
+### Database & Authentication
+
+* Firebase Authentication
+* Firebase Storage (if applicable)
+
+### Cloud
+
+* Google Cloud Platform
+
+---
+
+## 📂 Project Structure
+
+```text
+Pneumonia-Detection-App/
+│
+├── android/
+├── ios/
+├── src/
+│   ├── components/
+│   ├── screens/
+│   ├── navigation/
+│   ├── services/
+│   └── assets/
+│
+├── App.js
+├── package.json
+└── README.md
+```
+
+---
+
+## 🚀 Installation
+
+### 1. Clone the Repository
 
 ```bash
-# using npm
+git clone https://github.com/adeel-hussain786/Pneumonia-Detection-App.git
+```
+
+### 2. Navigate to the Project Folder
+
+```bash
+cd Pneumonia-Detection-App
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start Metro
+
+```bash
 npm start
-
-# OR using Yarn
-yarn start
 ```
 
-## Step 2: Start your Application
+### 5. Run the Application
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
+#### Android
 
 ```bash
-# using npm
 npm run android
-
-# OR using Yarn
-yarn android
 ```
 
-### For iOS
+#### iOS
 
 ```bash
-# using npm
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+---
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## 🧠 Model Workflow
 
-## Step 3: Modifying your App
+1. User uploads or captures a Chest X-ray image.
+2. The image is preprocessed.
+3. The CNN model analyzes the image.
+4. The model predicts:
 
-Now that you have successfully run the app, let's modify it.
+   * **Normal**
+   * **Pneumonia**
+5. The prediction is displayed to the user.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+---
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## 📊 Dataset
 
-## Congratulations! :tada:
+The CNN model is trained using publicly available Chest X-ray datasets containing:
 
-You've successfully run and modified your React Native App. :partying_face:
+* Normal Chest X-rays
+* Pneumonia Chest X-rays
 
-### Now what?
+---
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+## 📸 Screenshots
 
-# Troubleshooting
+<table>
+<tr>
+<td align="center">
+<img src="https://github.com/user-attachments/assets/0351cba6-2f2b-4a95-b8ee-4494333c0a51" width="180"/>
+<br><b>Home</b>
+</td>
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+<td align="center">
+<img src="https://github.com/user-attachments/assets/f29cb51a-92b4-46b0-9dd7-28b2616157a3" width="180"/>
+<br><b>Prediction</b>
+</td>
 
-# Learn More
+<td align="center">
+<img src="https://github.com/user-attachments/assets/28e8423f-d77d-4fad-b363-94e3e1808c41" width="180"/>
+<br><b>Result</b>
+</td>
 
-To learn more about React Native, take a look at the following resources:
+<td align="center">
+<img src="https://github.com/user-attachments/assets/eec8fdbe-4461-4d50-81c0-64de42e4edf3" width="180"/>
+<br><b>History</b>
+</td>
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+<td align="center">
+<img src="https://github.com/user-attachments/assets/1c5bcd68-3c4d-4532-ad3d-e2bfa0b03bd7" width="180"/>
+<br><b>Profile</b>
+</td>
+</tr>
+</table>
+
+```
+
+---
+
+## 🎯 Future Improvements
+
+* Multi-class disease detection
+* Improved CNN architecture
+* Explainable AI (Grad-CAM)
+* Offline inference using TensorFlow Lite
+* Patient history management
+* Doctor dashboard
+* Performance analytics
+
+---
+
+## 👨‍💻 Author
+
+**Adeel Hussain**
+
+* BS Computer Science
+* AI/ML Developer
+* Full Stack Developer
+* React Native Developer
+
+GitHub: https://github.com/adeel-hussain786
+
+---
+
+## 📄 License
+
+This project is intended for educational and research purposes.
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please consider giving it a **⭐ Star** on GitHub.
