@@ -1,8 +1,8 @@
 {
   "project_info": {
     "project_number": "1036074929981",
-    "project_id": "pneumonia-detection-dc38a",
-    "storage_bucket": "pneumonia-detection-dc38a.firebasestorage.app"
+    "project_id": "",
+    "storage_bucket": ""
   },
   "client": [
     {
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD5Ht6fndN7oEomKXIRdoE80GdZIU5Qy1E"
+          "current_key": ""
         }
       ],
       "services": {
